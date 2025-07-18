@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(17, 17, 17);
+}
+
+/* header */
+
+#imglogo {
+    display: block;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    line-height: normal;
+}
+
+.barra-superior{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 1px 20px;
+    border-bottom: 1px solid black;
+    background-color: rgba(44, 44, 44, 0.9);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);  /*Para safari*/
+    box-shadow: 0 3.5px rgba(0, 0, 0, 0.374);
+    overflow: hidden; /* para que no crezca más */
+    line-height: 80px; /* igual a la altura de la imagen */
+}
+
+/* Fin header */
+
+/* main */
+
+main {
+  background-image: url('../img/LoginMinecraftFondo.png') ;
+  background-size: cover;
+  padding: 4rem 0;
+  height: 100vh;
+}
+
+.container{
+    width: 600px;
+    margin: 0 auto; /* centrado horizontal */
+}
+
+main section article{ /*estilo del cuadro de login (central)*/
+    background-color: white;
+    /* margin: 0rem 0;  */
+    padding: 0;
+    padding-bottom: 1rem;
+    box-shadow: 0 4px 1px rgb(0, 0, 0, 0.5); /* valores: horizontal, vertical, blur, spread, color */
+}
+
+section article h2{
+    font-family: 'Minecraft', sans-serif;
+    color: rgb(41, 41, 41);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 2.25rem;
+    letter-spacing: -.03375rem;
+    text-align: center;   
+    padding-bottom: 0.5rem;
+    background-color: #d0c5c0;  
+    box-shadow: inset 0 2px 0 #ede5e2, inset 0 -2px gray;
+}
+
+section article form{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* CENTRA horizontalmente label e input */
+    padding-bottom: 1rem;
+}
+
+.form-group label {
+    font-family: Noto Sans, sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center; /* opcional, por si el texto es largo */
+}
+
+.form-group input { /* Estilo de los inputs (donde el usuario ingresa su user y password)*/
+    width: 80%; /* controla el ancho del input */
+    max-width: 300px; /* evita que sea muy grande en pantallas grandes */
+    height: 2.5rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    background-color: #d0c5c0;  
+    box-shadow: inset 0 4px gray;
+    border: 2px solid rgb(41, 41, 41);
+}
+
+.btn-login{
+    display:block;
+    background-color: #3C8A2E; 
+    border: 2px solid #1a1a1a;
+    width: 300px;
+    margin: 0rem auto;
+    padding: 0.5rem;
+    font-family: Noto Sans, sans-serif;
+    font-weight: 600;
+    color: white;
+    text-decoration: none; /* quita el subrayado */
+    box-shadow: inset 0 4px 0 #61A437, inset 0 -4px 0 #29581F; /* sombra interna (inset sombra para adentro, primera parte es la sombra de arriba 4px, la segunda parte es la sombra para abajo -4px)*/
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: #367723; /* color más claro al pasar el mouse */
+}
+
+.btn-title{
+    font-weight: bold; /* negrita */
+    font-size: 1rem;
+    display: block; /* para que el texto ocupe todo el ancho del botón */
+}
+
+/* Fin main */
+
+/* footer */
+
+.seccionfot{
+    background-size: cover;
+    background-attachment: local;
+    width: 100%;
+}
+
+.sec1{
+    height: 25vh; 
+    background-color: black;
+    position: relative;
+}
+
+footer .sec1 article{
+    font-family: "Noto Sans", sans-serif;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    position: absolute;
+    left: 50%; /*mueve el borde izquierdo del <article> al 50% del ancho del contenedor (.sec1).*/
+    transform: translateX(-50%); /*lo desplaza hacia la izquierda la mitad de su propio ancho, logrando el centrado perfecto.*/
+    top: 1rem;
+}
+
+.sec1 article p{
+    display: flex;
+    justify-content: center;
+}
+
+.icon-container{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.8rem;
+}
+
+.icon-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: rgb(17, 17, 17);
+}
+
+/* hover enlaces */
+
+.yticon:hover{
+    background-color: #fa0020;
+}
+
+.igicon:hover{
+    background-color: #f1437a;
+}
+
+.fcicon:hover{
+    background-color: #046ae4;
+}
+
+.xicon:hover{
+    background-color: #1891ee;
+}
+
+.tticon:hover{
+    background-color: #e53d4f;
+}
+
+.wspicon:hover{
+    background-color: #25d366;
+}
+
+.dsicon:hover{
+    background-color: #5865f2;
+}
+
+/* Fin hover enlaces */
+
+.sec2{
+    height: 75vh;
+    background-color: rgb(17, 17, 17);
+    position: relative;
+}
+
+footer .sec2 article{
+    position: absolute;
+    left: 1.5rem;
+    top: 3.3rem;
+}
+
+#imgxboxlogo{
+    position: relative;
+    left: 3rem;
+}
+
+#imgesrb{
+    position: relative;
+    left: 41rem;
+}
+
+#textfooter{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 12px;
+    position: relative;
+    top: 2rem;
+}
+
+#textfooter p{
+    color: white;
+}
+
+.afooter{
+    color: #a0e081;
+    text-decoration: none;
+    position: relative;
+    top: 0.6rem;
+}
+
+#aseparador{
+    color: #a0e081;
+    text-decoration: none;
+    position: relative;
+    top: 0.6rem;
+    left: 0.1rem;
+}
+
+#admincons{
+    position: relative;
+    left: 0.2rem;
+}
+
+.afooter:hover{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Fin footer */
